@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: rgba(248, 255, 244, 1);
+  }
+  h4 {
+    font-size: 40px;
+    text-align: center;
+    text-align: center;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  p {
+    margin-left: 600px;
+    text-align: center;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  }
+  .img {
+    border-radius: 100%;
+  }
+
+  h2 {
+    text-align: center;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  }
+
+  .input-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-top: 60px;
+  }
+
+  .input-section label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  .input-section input[type="number"], .input-section input[type="date"] {
+    padding: 5px;
+    margin-right: 10px;
+  }
+
+  .input-section button {
+    padding: 5px 10px;
+    background-color: rgba(90, 154, 102, 1);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .expenses-list {
+    margin: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: rgba(90, 154, 102, 1);
+    color: white;
+  }
+
+  tfoot td {
+    font-weight: bold;
+  }
+
+  .delete-btn {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .box {
+    width: 200px;
+    height: 100px;
+    border-radius: 25px;
+    background-color: rgba(90, 154, 102, 1);
+    margin-top: 50px;
+  }
+  .box a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(49, 14, 14);
+  }
+  .box:hover{
+    background-color: rgb(70, 105, 70);
+  }
+  
+@media (max-width: 600px) {
+    body {
+      font-size: 14px; 
+    }
+    p {
+        margin-left: 200px;
+    }
+    
+    .input-section {
+      flex-direction: column; 
+    }
+    
+    .input-section label {
+      margin-bottom: 5px; 
+    }
+    
+    .input-section input,
+    .input-section select {
+      width: 100%; 
+      margin-bottom: 10px; 
+    }
+    
+    .expenses-list table {
+      font-size: 12px; 
+    }
+  }
+  
+ 
+  @media (min-width: 601px) and (max-width: 900px) {
+    body {
+      font-size: 16px; 
+    }
+    p {
+        margin-left: 300px;;
+    }
+    
+    .expenses-list table {
+      font-size: 14px; 
+    }
+  }
+  
+  
+  @media (min-width: 901px) {
+    body {
+      font-size: 18px; 
+    }
+    
+    .expenses-list table {
+      font-size: 16px; 
+    }
+  }
